@@ -35,10 +35,10 @@ def get_window_rect_by_process(process_name):
         return None
 
 # Replace 'ac_client.exe' with your game process name
-monitor = get_window_rect_by_process('ac_client.exe')
+monitor = get_window_rect_by_process('Valorant.exe')
 
 if monitor:
-    model = YOLO(r".\assaultcube_trained_model\best.pt")
+    model = YOLO(r".\valorant_csgo.pt")
 
     with mss.mss() as sct:
         while True:
