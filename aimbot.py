@@ -10,7 +10,7 @@ from ultralytics import YOLO
 import threading
 
 # Load the pretrained YOLOv8 model
-model = YOLO(r".\assaultcube_trained_model\best.pt")
+model = YOLO(r".\valorant_csgo.pt")
 model.to("cuda")  # Ensure YOLO is using GPU
 
 # Global variables to store the last detection results
